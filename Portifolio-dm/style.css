@@ -1,0 +1,400 @@
+/* Menu lateral mobile */
+.side-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 220px;
+	height: 100vh;
+	background: #3ba38a;
+	color: #fff;
+	z-index: 3000;
+	box-shadow: -2px 0 8px rgba(0,0,0,0.08);
+	padding-top: 40px;
+	transition: right 0.3s;
+}
+.side-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.side-menu ul li {
+	margin: 24px 0;
+	text-align: left;
+}
+.side-menu ul li a {
+	color: #fff;
+	font-size: 1.2rem;
+	text-decoration: none;
+	font-family: 'Caladea', Arial, sans-serif;
+	padding: 8px 24px;
+	display: block;
+	border-radius: 6px;
+	transition: background 0.2s;
+}
+.side-menu ul li a:hover {
+	background: #25d366;
+}
+.menu-btn {
+	display: none;
+	position: fixed;
+	top: 50px;
+	right: 32px;
+	transform: none;
+	z-index: 3100;
+	background: #3ba38a;
+	color: #fff;
+	border: none;
+		font-size: 1.5rem;
+		border-radius: 6px;
+		padding: 4px 8px;
+		cursor: pointer;
+		box-shadow: 0 2px 8px rgba(60,180,138,0.10);
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 16px;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+	cursor: pointer;
+}
+@media (max-width: 768px) {
+	.menu-btn {
+		display: block;
+	}
+	.topo-bar nav, .topo-bar nav ul {
+		display: none !important;
+	}
+}
+@media (min-width: 769px) {
+	.menu-btn {
+		display: none !important;
+	}
+}
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+	.topo-bar {
+		flex-direction: column;
+		align-items: center;
+		padding: 16px 8px;
+		gap: 12px;
+	}
+	.logo-titulo {
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+	.topo-bar nav {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+	.topo-bar nav ul {
+		flex-direction: column;
+		gap: 12px;
+	}
+	.redes-sociais {
+		gap: 12px;
+		margin-top: 8px;
+	}
+	.hero {
+		margin: 90px auto 24px auto;
+		max-width: 100vw;
+		border-radius: 0;
+	}
+	.servicos,
+	.galeria {
+		max-width: 900px;
+		margin: 120px auto 20px auto;
+		padding: 30px 60px;
+		background: #eafff2;
+		border-radius: 12px;
+		box-shadow: 0 2px 8px rgba(60, 180, 138, 0.08);
+	}
+			.imagens-serviços, .imagens-galeria {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 16px;
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.imagens-serviços img, .imagens-galeria img {
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+	.imagens-serviços img, .imagens-galeria img {
+		width: 120px;
+		height: 80px;
+	}
+	.servico-item span {
+		font-size: 1rem;
+	}
+	.rodape {
+		padding: 12px 0;
+		font-size: 0.95rem;
+	}
+	.whatsapp-float a {
+		width: 48px;
+		height: 48px;
+		font-size: 1.5rem;
+	}
+}
+/* Redes sociais rodapé */
+.redes-sociais {
+	margin-top: 18px;
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+.social-icon {
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+.social-icon:hover {
+	color: #25d366;
+}
+/* Hero Section */
+.hero {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 110px auto 40px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	border-radius: 16px;
+	box-shadow: 0 2px 16px rgba(60,180,138,0.10);
+}
+.hero-img {
+	width: 100%;
+	max-height: 350px;
+	object-fit: cover;
+	border-radius: 16px;
+}
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: rgba(60,180,138,0.15);
+	padding: 30px 40px;
+	border-radius: 12px;
+}
+.hero-content h2 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-family: 'Caladea', Arial, sans-serif;
+	margin-bottom: 20px;
+	text-shadow: 0 2px 8px rgba(60,180,138,0.25);
+}
+.hero-btn {
+	display: inline-block;
+	background: #25d366;
+	color: #fff;
+	font-size: 1.2rem;
+	font-family: 'Caladea', Arial, sans-serif;
+	padding: 14px 32px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow: 0 2px 8px rgba(60,180,138,0.15);
+	transition: background 0.2s;
+}
+.hero-btn:hover {
+	background: #128c7e;
+}
+
+/* Botão flutuante WhatsApp */
+.whatsapp-float {
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	z-index: 2000;
+}
+.whatsapp-float a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background: #25d366;
+	color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 8px rgba(60,180,138,0.15);
+	font-size: 2.2rem;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+.whatsapp-float a:hover {
+	background: #128c7e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Caladea', Arial, sans-serif;
+	background: #fff;
+	/* Espaço para o header fixo */
+	padding-top: 80px;
+}
+
+.topo-bar, .topo-bar h1, .topo-bar nav ul li a {
+	font-family: 'Caladea', Arial, sans-serif;
+}
+
+
+.topo-bar {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100vw;
+		min-width: 0;
+		background-color: white;
+		color: #3ba38a;
+		padding: 20px 30px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		box-sizing: border-box;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo-titulo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.topo-bar h1 {
+	margin: 0;
+	font-size: 1.8rem;
+	color: #3ba38a;
+}
+.topo-bar img {
+		height: 80px;
+		margin-right: 10px;
+}
+
+
+.topo-bar nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+.topo-bar nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 32px;
+	}
+
+.topo-bar nav ul li a {
+	color: #3ba38a;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1rem;
+	transition: color 0.2s;
+}
+
+.topo-bar nav ul li a:hover {
+	color: #c0ffc0;
+}
+
+
+/* Seção Serviços */
+.servicos,
+.galeria {
+  max-width: 900px;           /* Limita a largura máxima do container */
+  margin: 120px auto 20px auto; /* Espaço acima (120px), centraliza horizontalmente (auto), espaço abaixo (20px) */
+  padding: 30px 60px;         /* Espaço interno: 30px em cima/baixo, 60px nas laterais */
+  background: #eafff2;        /* Cor de fundo suave */
+  border-radius: 12px;        /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(60, 180, 138, 0.08); /* Sombra leve para destacar o container */
+}
+
+.imagens-serviços,
+.imagens-galeria {
+  display: flex;              /* Usa flexbox para organizar os itens */
+  flex-wrap: wrap;            /* Permite que os itens quebrem linha se não couberem */
+  justify-content: center;    /* Centraliza os itens horizontalmente */
+  align-items: center;        /* Centraliza os itens verticalmente */
+  gap: 20px;                  /* Espaço entre os itens */
+  width: 100%;                /* Ocupa toda a largura do container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servico-item {
+  display: flex;
+  flex-direction: column;     /* Organiza imagem e texto em coluna */
+  align-items: center;        /* Centraliza imagem e texto */
+  justify-content: center;
+  text-align: center;
+}
+
+.imagens-serviços img,
+.imagens-galeria img {
+  width: 180px;               /* Largura fixa das imagens */
+  height: 120px;              /* Altura fixa das imagens */
+  object-fit: cover;          /* Mantém proporção e cobre o espaço */
+  border-radius: 8px;         /* Bordas arredondadas nas imagens */
+  box-shadow: 0 1px 4px rgba(60, 180, 138, 0.10); /* Sombra leve nas imagens */
+  display: block;             /* Permite centralizar com margin auto */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicos h2,
+.galeria h2 {
+	color: #3ba38a;
+	font-size: 2rem;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.servicos span,
+.galeria span {
+	color: #3ba38a;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.servicos p,
+.galeria p {
+	color: #666;
+	font-size: 1rem;
+	text-align: center;
+}
+
+/* Rodapé */
+.rodape {
+	background: #3ba38a;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 40px;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
